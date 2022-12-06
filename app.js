@@ -13,4 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/items", shoppingListRouter);
 
+app.listen(4000, function () {
+  console.log("I can hear you");
+});
+
 export default app;
